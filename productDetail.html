@@ -107,10 +107,10 @@
                                   <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link mx-lg-2" href="about.html">Giới thiệu</a>
+                                  <a class="nav-link mx-lg-2" href="#">Giới thiệu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link mx-lg-2" href="product.html">Sản phẩm</a>
+                                    <a class="nav-link mx-lg-2" href="#">Sản phẩm</a>
                                   </li>
                                   <li class="nav-item">
                                     <a class="nav-link mx-lg-2" href="policy.html">Chính sách</a>
@@ -143,77 +143,43 @@
             </div>
         </section>
     </header>
-    <!-- start slide show -->
-    <div class="slide-show">
-        <div class="list-image">
-            <img class="img-fluid" src="assets/image/slider_1.webp" alt="">
-            <img class="img-fluid" src="assets/image/slider_2.webp" alt="">
-            <img class="img-fluid" src="assets/image/slider_3.webp" alt="">
-        </div>
-    </div>
-    <!-- end slide show -->
-    <!-- banner -->
-    <div class="banner">
-        <div class="container">
-            <div class="row p-3">
-                <div class="col banner-item"><a href=""><img class="rounded img-fluid" src="assets/image/img_3banner_1.webp" alt=""></a></div>
-                <div class="col banner-item"><a href=""><img class="rounded img-fluid" src="assets/image/img_3banner_2.webp" alt=""></a></div>
-                <div class="col banner-item"><a href=""><img class="rounded img-fluid" src="assets/image/img_3banner_3.webp" alt=""></a></div>
-            </div>
-            
-        </div>
-    </div>
-    <!-- end banner -->
-    <!-- start product -->
-    <div class="product">
-        <div class="container">
-            <h2 class="my-4 text-center">Sản phẩm mới nhất</h2>
-            <div class="row p-5">
-                <div class="col-md-3 col-6">
-                    <div class="card h-100 rounded">
-                      <img class="card-img-top" src="assets/image/product1.webp" alt="Product 3">
-                      <div class="card-body">
-                        <h4 class="card-title">Product 3</h4>
-                        <h5>$29.99</h5>
-                        <p class="card-text">Description of Product 3 goes here.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="card h-100 rounded">
-                      <img class="card-img-top " src="assets/image/product1.webp" alt="Product 3">
-                      <div class="card-body">
-                        <h4 class="card-title">Product 3</h4>
-                        <h5>$29.99</h5>
-                        <p class="card-text">Description of Product 3 goes here.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="card h-100 rounded">
-                      <img class="card-img-top" src="assets/image/product1.webp" alt="Product 3">
-                      <div class="card-body">
-                        <h4 class="card-title">Product 3</h4>
-                        <h5>$29.99</h5>
-                        <p class="card-text">Description of Product 3 goes here.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="card h-100 rounded">
-                      <img class="card-img-top" src="assets/image/product1.webp" alt="Product 3">
-                      <div class="card-body">
-                        <h4 class="card-title">Product 3</h4>
-                        <h5>$29.99</h5>
-                        <p class="card-text">Description of Product 3 goes here.</p>
-                      </div>
-                    </div>
-                  </div>
 
-            </div>
+    <div class="container">
+     <div class="row">
+      <div class="col-3">
+        <img class="img-fluid" src="assets/image/product1.webp" alt="">
+      </div>
+      <div class="col-9 pt-3">
+        <div class="row"><h3>product3</h3></div>
+        <div class="row">Mã: đang cập nhật</div>
+        <div class="row">Thương hiệu: Apple | Tình trạng: Còn hàng</div>
+        <hr>
+        <div class="row" style="color: red; font-weight: bold; font-size: larger;">2.590.000₫ </div>
+        <div class="row">
+           <div class="input-group quantity mr-3" style="width: 200px;">
+            <button onclick="handleMinus()" type="button" class="btn btn-danger" data-type="minus" data-field="quant[1]">
+                <span class="fa fa-minus"></span>
+            </button>
+            <input id="quantity" type="number" name="quant[1]" class="form-control input-number" value="1" min="1" max="100">
+            <button onclick="handlePlus()"  type="button" class="btn btn-danger" data-type="plus" data-field="quant[1]">
+                <span class="fa fa-plus"></span>
+            </button>
         </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-3">
+            <button class="btn btn-danger">Mua ngay</button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-danger">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+     </div>
     </div>
-    <!-- end product -->
     <!-- footer -->
     <footer>
         <section class="footer">
